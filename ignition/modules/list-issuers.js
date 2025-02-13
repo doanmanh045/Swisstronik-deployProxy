@@ -17,7 +17,7 @@ const sendShieldedQuery = async (provider, destination, data, value) => {
   const rpcLink = hre.network.config.url;
   const [encryptedData, usedEncryptedKey] = await encryptDataField(rpcLink, data)
 
-  const response = await provider.call({
+  const response = await provider.call({ 
     to: destination, 
     data: encryptedData, 
     value,
