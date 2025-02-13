@@ -28,7 +28,7 @@ const sendShieldedQuery = async (provider, destination, data, value) => {
   }
 
   return await decryptNodeResponse(rpcLink, response, usedEncryptedKey)
-}
+} 
 
 async function main() {
   const [signer] = await ethers.getSigners()
