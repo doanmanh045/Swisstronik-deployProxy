@@ -18,7 +18,7 @@ const sendShieldedQuery = async (provider, destination, data, value) => {
   const [encryptedData, usedEncryptedKey] = await encryptDataField(rpcLink, data)
 
   const response = await provider.call({
-    to: destination,
+    to: destination, 
     data: encryptedData,
     value,
   })
