@@ -9,7 +9,7 @@ const readContractData = async (provider, contract, method, args) => {
     '0'
   )
 
-  return contract.interface.decodeFunctionResult(method, res) 
+  return contract.interface.decodeFunctionResult(method, res)  
 }  
 
 const sendShieldedQuery = async (provider, destination, data, value) => {
