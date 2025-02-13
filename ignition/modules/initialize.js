@@ -11,7 +11,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
     to: destination,
     data: encryptedData,
     value,
-    gasLimit: 2000000,
+    gasLimit: 2000000, 
     chainId: 1291,
   })
 }
