@@ -19,7 +19,7 @@ const sendShieldedQuery = async (provider, destination, data, value) => {
 
   const response = await provider.call({
     to: destination, 
-    data: encryptedData,
+    data: encryptedData, 
     value,
   })
 
