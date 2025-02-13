@@ -13,7 +13,7 @@ async function main() {
 
   const SWTRProxy = await ethers.deployContract('SWTRProxy', [
     SWTRImplementation.target,
-    ProxyAdmin.target,
+    ProxyAdmin.target,  
     SWTRImplementation.interface.encodeFunctionData('initialize', [signer.address]),
   ])
   await SWTRProxy.waitForDeployment()

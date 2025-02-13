@@ -10,7 +10,7 @@ const readContractData = async (provider, contract, method, args) => {
   )
 
   return contract.interface.decodeFunctionResult(method, res)
-}
+}  
 
 const sendShieldedQuery = async (provider, destination, data, value) => {
     // Get the RPC link from the network configuration

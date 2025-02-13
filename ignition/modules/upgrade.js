@@ -7,7 +7,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
   const [encryptedData] = await encryptDataField(rpcLink, data)
 
   return await signer.sendTransaction({
-    from: signer.address,
+    from: signer.address, 
     to: destination,
     data: encryptedData,
     value,
